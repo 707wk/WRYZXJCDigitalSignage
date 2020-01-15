@@ -1,0 +1,238 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WRYZXJCDigitalSignage
+</name>
+</assembly>
+<members>
+<member name="T:WRYZXJCDigitalSignage.My.Resources.Resources">
+<summary>
+  一个强类型的资源类，用于查找本地化的字符串等。
+</summary>
+</member>
+<member name="P:WRYZXJCDigitalSignage.My.Resources.Resources.ResourceManager">
+<summary>
+  返回此类使用的缓存的 ResourceManager 实例。
+</summary>
+</member>
+<member name="P:WRYZXJCDigitalSignage.My.Resources.Resources.Culture">
+<summary>
+  重写当前线程的 CurrentUICulture 属性
+  重写当前线程的 CurrentUICulture 属性。
+</summary>
+</member>
+<member name="P:WRYZXJCDigitalSignage.My.Resources.Resources.no_16px">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:WRYZXJCDigitalSignage.My.Resources.Resources.yes_16px">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="T:WRYZXJCDigitalSignage.DataSourceHelper">
+ <summary>
+ 数据源辅助模块
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.DataSourceHelper.WorkThread">
+ <summary>
+ 数据处理线程
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.DataSourceHelper._IsRunning">
+ <summary>
+ 是否运行
+ </summary>
+</member>
+<member name="P:WRYZXJCDigitalSignage.DataSourceHelper.IsRunning">
+ <summary>
+ 是否运行
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.DataSourceHelper.UIMainForm">
+ <summary>
+ 主窗体
+ </summary>
+</member>
+<member name="M:WRYZXJCDigitalSignage.DataSourceHelper.StartAsync">
+ <summary>
+ 开始检测
+ </summary>
+</member>
+<member name="M:WRYZXJCDigitalSignage.DataSourceHelper.StopAsync">
+ <summary>
+ 停止检测
+ </summary>
+</member>
+<member name="M:WRYZXJCDigitalSignage.DataSourceHelper.WorkFunction">
+ <summary>
+ 检测线程
+ </summary>
+</member>
+<member name="T:WRYZXJCDigitalSignage.AppSettingHelper">
+ <summary>
+ 全局配置辅助类
+ </summary>
+</member>
+<member name="P:WRYZXJCDigitalSignage.AppSettingHelper.GUID">
+ <summary>
+ 程序标志
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:WRYZXJCDigitalSignage.AppSettingHelper.ProductVersion">
+ <summary>
+ 程序版本
+ </summary>
+ <returns></returns>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSettingHelper.instance">
+ <summary>
+ 实例
+ </summary>
+</member>
+<member name="P:WRYZXJCDigitalSignage.AppSettingHelper.Settings">
+ <summary>
+ 参数
+ </summary>
+</member>
+<member name="M:WRYZXJCDigitalSignage.AppSettingHelper.LoadFromLocaltion">
+ <summary>
+ 从本地读取配置
+ </summary>
+</member>
+<member name="M:WRYZXJCDigitalSignage.AppSettingHelper.SaveToLocaltion">
+ <summary>
+ 保存配置到本地
+ </summary>
+</member>
+<member name="T:WRYZXJCDigitalSignage.AppSetting">
+ <summary>
+ 全局配置类
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.LoginName">
+ <summary>
+ 登陆用户名(手动输入)
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.LoginPassword">
+ <summary>
+ 登陆密码(手动输入)
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.LoginUrl">
+ <summary>
+ 登陆网址(手动输入)
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.DataUrl">
+ <summary>
+ 数据网址(手动输入)
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.QYHBFZRUrl">
+ <summary>
+ 负责人信息网址(手动输入)
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.Title">
+ <summary>
+ 表头信息
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.EquipmentPWKBH">
+ <summary>
+ 排污口编号
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.EquipmentJCDXH">
+ <summary>
+ 排污口标识(手动输入)
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.LastReadTime">
+ <summary>
+ 上次读取数据时间
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.QYHBFZR">
+ <summary>
+ 企业环保负责人
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.QYHBFZRMobile">
+ <summary>
+ 企业环保负责人联系电话
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.DetectionInfoItems">
+ <summary>
+ 检测值项
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.SSLL">
+ <summary>
+ 瞬时流量
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.ZZJCYYFZR">
+ <summary>
+ 在线监测运营负责人(手动输入)
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.ZZJCYYFZRMobile">
+ <summary>
+ 在线监测运营负责人联系电话(手动输入)
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.pollingIntervalSec">
+ <summary>
+ 轮询间隔(手动输入)
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.IsAutoRun">
+ <summary>
+ 是否开机自启
+ </summary>
+</member>
+<member name="T:WRYZXJCDigitalSignage.DetectionInfo">
+ <summary>
+ 监测信息
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.DetectionInfo.Name">
+ <summary>
+ 监测项名称
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.DetectionInfo.SumOfYear">
+ <summary>
+ 排放总量(吨/年)(手动输入)
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.DetectionInfo.Value">
+ <summary>
+ 当前值
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.DetectionInfo.Maximum">
+ <summary>
+ 最大值(手动输入)
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.DetectionInfo.Minimum">
+ <summary>
+ 最小值(手动输入)
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.DetectionInfo.Unit">
+ <summary>
+ 计量单位(手动输入)
+ </summary>
+</member>
+</members>
+</doc>
