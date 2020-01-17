@@ -70,6 +70,9 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="Wangk.Resource">
+      <HintPath>..\..\WangkNamespace\DLL\Wangk.Resource.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -101,6 +104,7 @@
     <Compile Include="03.DataAccessLayer\AppSetting\AppSettingHelper.vb" />
     <Compile Include="03.DataAccessLayer\AppSetting\AppSetting.vb" />
     <Compile Include="03.DataAccessLayer\DetectionInfo.vb" />
+    <Compile Include="03.DataAccessLayer\ShowImageInfo.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -149,7 +153,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo_32px.ico" />
-    <Content Include="logo_64px.ico" />
+    <None Include="res\close_20px.png" />
+    <None Include="res\add_20px.png" />
     <None Include="res\yes_16px.png" />
     <None Include="res\no_16px.png" />
   </ItemGroup>

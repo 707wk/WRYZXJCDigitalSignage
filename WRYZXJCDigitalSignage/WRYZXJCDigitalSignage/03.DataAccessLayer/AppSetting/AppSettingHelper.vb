@@ -100,6 +100,9 @@ Public Class AppSettingHelper
             instance.DetectionInfoItems.Add(New DetectionInfo With {.Name = "总氮"})
             instance.DetectionInfoItems.Add(New DetectionInfo With {.Name = "总磷"})
             instance.pollingIntervalSec = 10
+            instance.ShowSec = 10
+            instance.ShowImageItems = New List(Of ShowImageInfo)
+
         End Try
 
     End Sub

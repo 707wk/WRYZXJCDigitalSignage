@@ -18,6 +18,11 @@ Public Class DetectionInfo
     Public Value As Double
 
     ''' <summary>
+    ''' 假值
+    ''' </summary>
+    Public ValueOfForgery As Double
+
+    ''' <summary>
     ''' 最大值(手动输入)
     ''' </summary>
     Public Maximum As Integer
@@ -30,5 +35,10 @@ Public Class DetectionInfo
     ''' 计量单位(手动输入)
     ''' </summary>
     Public Unit As String = "mg/L"
+
+    ''' <summary>
+    ''' 状态
+    ''' </summary>
+    Public Status As String = "运行"
 
 End Class

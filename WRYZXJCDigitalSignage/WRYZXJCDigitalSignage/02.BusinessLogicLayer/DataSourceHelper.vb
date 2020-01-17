@@ -61,7 +61,8 @@ Public Class DataSourceHelper
         End If
         _IsRunning = False
 
-        WorkThread.Join()
+        WorkThread.Join(500)
+        WorkThread.Abort()
         WorkThread = Nothing
 
     End Sub
@@ -100,29 +101,29 @@ Public Class DataSourceHelper
                 AppSettingHelper.Settings.Title = $"{titleNode.Attributes("title").Value} -- 环保信息公示"
 #End Region
 
-#Region "获取企业环保负责人"
-                request = WebRequest.Create($"{AppSettingHelper.Settings.QYHBFZRUrl}")
-                request.Method = "POST"
-                request.ContentType = "application/x-www-form-urlencoded"
-                request.CookieContainer = tmpCookies
-                '接收数据
-                resp = request.GetResponse()
+#Region "获取企业环保负责人(废弃)"
+                'request = WebRequest.Create($"{AppSettingHelper.Settings.QYHBFZRUrl}")
+                'request.Method = "POST"
+                'request.ContentType = "application/x-www-form-urlencoded"
+                'request.CookieContainer = tmpCookies
+                ''接收数据
+                'resp = request.GetResponse()
 
-                Stream = resp.GetResponseStream()
-                Using reader As StreamReader = New StreamReader(Stream,
-                                                        System.Text.Encoding.UTF8)
-                    doc.LoadHtml(reader.ReadToEnd())
-                End Using
+                'Stream = resp.GetResponseStream()
+                'Using reader As StreamReader = New StreamReader(Stream,
+                '                                        System.Text.Encoding.UTF8)
+                '    doc.LoadHtml(reader.ReadToEnd())
+                'End Using
 
-                Dim tableNodes = doc.DocumentNode.SelectNodes("//tr[@id='trid0']/td")
+                'Dim tableNodes = doc.DocumentNode.SelectNodes("//tr[@id='trid0']/td")
 
-                '负责人
-                Dim tmpStr = tableNodes(6).InnerText.Replace(vbTab, "").Replace(vbCrLf, "").Replace("&nbsp;", "")
-                AppSettingHelper.Settings.QYHBFZR = tmpStr
+                ''负责人
+                'Dim tmpStr = tableNodes(6).InnerText.Replace(vbTab, "").Replace(vbCrLf, "").Replace("&nbsp;", "")
+                'AppSettingHelper.Settings.QYHBFZR = tmpStr
 
-                '电话
-                tmpStr = tableNodes(7).InnerText.Replace(vbTab, "").Replace(vbCrLf, "").Replace("&nbsp;", "").Replace(" ", "")
-                AppSettingHelper.Settings.QYHBFZRMobile = tmpStr
+                ''电话
+                'tmpStr = tableNodes(7).InnerText.Replace(vbTab, "").Replace(vbCrLf, "").Replace("&nbsp;", "").Replace(" ", "")
+                'AppSettingHelper.Settings.QYHBFZRMobile = tmpStr
 #End Region
 
 #Region "获取检测值"
@@ -139,12 +140,12 @@ Public Class DataSourceHelper
                     doc.LoadHtml(reader.ReadToEnd())
                 End Using
 
-                '排污口编号
-                titleNode = doc.DocumentNode.SelectSingleNode("//div[@id='div_btn']/h1")
-                Dim titleStr = titleNode.InnerText
-                AppSettingHelper.Settings.EquipmentPWKBH = titleStr.Substring(titleStr.LastIndexOf("(") + 1).Replace(")", "")
+                ''排污口编号
+                'titleNode = doc.DocumentNode.SelectSingleNode("//div[@id='div_btn']/h1")
+                'Dim titleStr = titleNode.InnerText
+                'AppSettingHelper.Settings.EquipmentPWKBH = titleStr.Substring(titleStr.LastIndexOf("(") + 1).Replace(")", "")
 
-                tableNodes = doc.DocumentNode.SelectNodes("//tr[@id='trid0']/td")
+                Dim tableNodes = doc.DocumentNode.SelectNodes("//tr[@id='trid0']/td")
 
                 '更新时间
                 Dim tmpDate = Convert.ToDateTime(tableNodes(0).InnerText.Replace(vbTab, "").Replace(vbCrLf, "").Replace("&nbsp;", ""))

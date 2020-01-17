@@ -22,6 +22,16 @@ WRYZXJCDigitalSignage
   重写当前线程的 CurrentUICulture 属性。
 </summary>
 </member>
+<member name="P:WRYZXJCDigitalSignage.My.Resources.Resources.add_20px">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:WRYZXJCDigitalSignage.My.Resources.Resources.close_20px">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
 <member name="P:WRYZXJCDigitalSignage.My.Resources.Resources.no_16px">
 <summary>
   查找 System.Drawing.Bitmap 类型的本地化资源。
@@ -134,11 +144,6 @@ WRYZXJCDigitalSignage
  数据网址(手动输入)
  </summary>
 </member>
-<member name="F:WRYZXJCDigitalSignage.AppSetting.QYHBFZRUrl">
- <summary>
- 负责人信息网址(手动输入)
- </summary>
-</member>
 <member name="F:WRYZXJCDigitalSignage.AppSetting.Title">
  <summary>
  表头信息
@@ -146,7 +151,7 @@ WRYZXJCDigitalSignage
 </member>
 <member name="F:WRYZXJCDigitalSignage.AppSetting.EquipmentPWKBH">
  <summary>
- 排污口编号
+ 排污口编号(手动输入)
  </summary>
 </member>
 <member name="F:WRYZXJCDigitalSignage.AppSetting.EquipmentJCDXH">
@@ -161,12 +166,12 @@ WRYZXJCDigitalSignage
 </member>
 <member name="F:WRYZXJCDigitalSignage.AppSetting.QYHBFZR">
  <summary>
- 企业环保负责人
+ 企业环保负责人(手动输入)
  </summary>
 </member>
 <member name="F:WRYZXJCDigitalSignage.AppSetting.QYHBFZRMobile">
  <summary>
- 企业环保负责人联系电话
+ 企业环保负责人联系电话(手动输入)
  </summary>
 </member>
 <member name="F:WRYZXJCDigitalSignage.AppSetting.DetectionInfoItems">
@@ -177,6 +182,16 @@ WRYZXJCDigitalSignage
 <member name="F:WRYZXJCDigitalSignage.AppSetting.SSLL">
  <summary>
  瞬时流量
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.SSLLfForgery">
+ <summary>
+ 瞬时流量
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.ZXJCYYWHDW">
+ <summary>
+ 在线监测运营维护单位(手动输入)
  </summary>
 </member>
 <member name="F:WRYZXJCDigitalSignage.AppSetting.ZZJCYYFZR">
@@ -194,9 +209,29 @@ WRYZXJCDigitalSignage
  轮询间隔(手动输入)
  </summary>
 </member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.ShowSec">
+ <summary>
+ 显示时长
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.ShowImageItems">
+ <summary>
+ 轮播图片列表
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.ShowID">
+ <summary>
+ 显示项ID
+ </summary>
+</member>
 <member name="F:WRYZXJCDigitalSignage.AppSetting.IsAutoRun">
  <summary>
  是否开机自启
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.AppSetting.IsForgery">
+ <summary>
+ 是否显示假值
  </summary>
 </member>
 <member name="T:WRYZXJCDigitalSignage.DetectionInfo">
@@ -219,6 +254,11 @@ WRYZXJCDigitalSignage
  当前值
  </summary>
 </member>
+<member name="F:WRYZXJCDigitalSignage.DetectionInfo.ValueOfForgery">
+ <summary>
+ 假值
+ </summary>
+</member>
 <member name="F:WRYZXJCDigitalSignage.DetectionInfo.Maximum">
  <summary>
  最大值(手动输入)
@@ -232,6 +272,26 @@ WRYZXJCDigitalSignage
 <member name="F:WRYZXJCDigitalSignage.DetectionInfo.Unit">
  <summary>
  计量单位(手动输入)
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.DetectionInfo.Status">
+ <summary>
+ 状态
+ </summary>
+</member>
+<member name="T:WRYZXJCDigitalSignage.ShowImageInfo">
+ <summary>
+ 显示图片信息
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.ShowImageInfo.ShowSec">
+ <summary>
+ 显示时长
+ </summary>
+</member>
+<member name="F:WRYZXJCDigitalSignage.ShowImageInfo.Path">
+ <summary>
+ 文件路径
  </summary>
 </member>
 </members>
